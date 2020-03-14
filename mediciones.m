@@ -111,7 +111,7 @@ function mediciones
     frequency100to100k_2puntas  = uitreenode(puntas2_pasivos,'Text','Frecuencia 100Hz-100kHz',  'NodeData',[]);
     %   Category of Pasivos->4 puntas
     frequency1kto100k_4puntas   = uitreenode(puntas4_pasivos,'Text','Frecuencia 1kHz-100kHz',   'NodeData',[]);
-    frequency100to100k_4puntas  = uitreenode(puntas4_pasivos,'Text','Frecuencia 100Hz-100kHz',  'NodeData',[]);
+    %frequency100to100k_4puntas  = uitreenode(puntas4_pasivos,'Text','Frecuencia 100Hz-100kHz',  'NodeData',[]);
 
     %   Category of Electrodos->2 puntas
     ferroceno = uitreenode(puntas2_electrodos,'Text','Ferroceno', 'NodeData',['Ferroceno_electrodos']);
@@ -193,20 +193,18 @@ function mediciones
     %   Category of Pasivos->4 Puntas->Frequency 1kHz to 100kHz
     cap1mf_1kto100k_4puntas     = uitreenode(frequency1kto100k_4puntas,'Text','Capacitor 1mF',     'NodeData',['cap1mf_1kto100k_4puntas']);
     ind15mh_1kto100k_4puntas    = uitreenode(frequency1kto100k_4puntas,'Text','Inductor 15mH',     'NodeData',['ind15mh_1kto100k_4puntas']);
-
-    %   Category of Pasivos->4 Puntas->Frequency 100Hz to 100kHz
-    cap1uf_100to100k_4puntas    = uitreenode(frequency100to100k_4puntas,'Text','Capacitor 1uF',     'NodeData',['cap1uf_100to100k_4puntas']);
-    cap10uf_100to100k_4puntas   = uitreenode(frequency100to100k_4puntas,'Text','Capacitor 10uF',    'NodeData',['cap10uf_100to100k_4puntas']);
-    cap100nf_100to100k_4puntas  = uitreenode(frequency100to100k_4puntas,'Text','Capacitor 100nF',   'NodeData',['cap100nf_100to100k_4puntas']);
-    cap100uf_100to100k_4puntas  = uitreenode(frequency100to100k_4puntas,'Text','Capacitor 100uF',   'NodeData',['cap100uf_100to100k_4puntas']);
-    ind1_5mh_100to100k_4puntas  = uitreenode(frequency100to100k_4puntas,'Text','Inductor 1.5mH',    'NodeData',['ind1_5mh_100to100k_4puntas']);
-    ind1mh_100to100k_4puntas    = uitreenode(frequency100to100k_4puntas,'Text','Inductor 1mH',      'NodeData',['ind1mh_100to100k_4puntas']);
-    ind4_7mh_100to100k_4puntas  = uitreenode(frequency100to100k_4puntas,'Text','Inductor 4.7mH',    'NodeData',['ind4_7mh_100to100k_4puntas']);
-    ind12mh_100to100k_4puntas   = uitreenode(frequency100to100k_4puntas,'Text','Inductor 12mH',     'NodeData',['ind12mh_100to100k_4puntas']);
-    res1k_100to100k_4puntas     = uitreenode(frequency100to100k_4puntas,'Text','Resistor 1 kOhm',   'NodeData',['res1k_100to100k_4puntas']);
-    res10k_100to100k_4puntas    = uitreenode(frequency100to100k_4puntas,'Text','Resistor 10 kOhms', 'NodeData',['res10k_100to100k_4puntas']);
-    res100_100to100k_4puntas    = uitreenode(frequency100to100k_4puntas,'Text','Resistor 100 Ohms', 'NodeData',['res100_100to100k_4puntas']);
-    res100k_100to100k_4puntas   = uitreenode(frequency100to100k_4puntas,'Text','Resistor 100 kOhms','NodeData',['res100k_100to100k_4puntas']);
+    cap1uf_1kto100k_4puntas     = uitreenode(frequency1kto100k_4puntas,'Text','Capacitor 1uF',     'NodeData',['cap1uf_1kto100k_4puntas']);
+    cap10uf_1kto100k_4puntas    = uitreenode(frequency1kto100k_4puntas,'Text','Capacitor 10uF',    'NodeData',['cap10uf_1kto100k_4puntas']);
+    cap100nf_1kto100k_4puntas   = uitreenode(frequency1kto100k_4puntas,'Text','Capacitor 100nF',   'NodeData',['cap100nf_1kto100k_4puntas']);
+    cap100uf_1kto100k_4puntas   = uitreenode(frequency1kto100k_4puntas,'Text','Capacitor 100uF',   'NodeData',['cap100uf_1kto100k_4puntas']);
+    ind1_5mh_1kto100k_4puntas   = uitreenode(frequency1kto100k_4puntas,'Text','Inductor 1.5mH',    'NodeData',['ind1_5mh_1kto100k_4puntas']);
+    ind1mh_1kto100k_4puntas     = uitreenode(frequency1kto100k_4puntas,'Text','Inductor 1mH',      'NodeData',['ind1mh_1kto100k_4puntas']);
+    ind4_7mh_1kto100k_4puntas   = uitreenode(frequency1kto100k_4puntas,'Text','Inductor 4.7mH',    'NodeData',['ind4_7mh_1kto100k_4puntas']);
+    ind12mh_1kto100k_4puntas    = uitreenode(frequency1kto100k_4puntas,'Text','Inductor 12mH',     'NodeData',['ind12mh_1kto100k_4puntas']);
+    res1k_1kto100k_4puntas      = uitreenode(frequency1kto100k_4puntas,'Text','Resistor 1 kOhm',   'NodeData',['res1k_1kto100k_4puntas']);
+    res10k_1kto100k_4puntas     = uitreenode(frequency1kto100k_4puntas,'Text','Resistor 10 kOhms', 'NodeData',['res10k_1kto100k_4puntas']);
+    res100_1kto100k_4puntas     = uitreenode(frequency1kto100k_4puntas,'Text','Resistor 100 Ohms', 'NodeData',['res100_1kto100k_4puntas']);
+    res100k_1kto100k_4puntas    = uitreenode(frequency1kto100k_4puntas,'Text','Resistor 100 kOhms','NodeData',['res100k_1kto100k_4puntas']);
 
     %   Category of System->Calibrado->Electrodo_1
     electrodo1_1 = uitreenode(electrodo1,'Text','Z1 1', 'NodeData',['Z1 1']);
@@ -449,35 +447,35 @@ function mediciones
                 case 'res100k_100to100k_2puntas'
                     imshow(strcat(pwd,'\Componentes Pasivos\2 Puntas\Frequency100Hz100kHz\resistor100k.png'));
                 case 'cap1mf_1kto100k_4puntas'%%
-                    imshow(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency1kHz100kHz\capacitor1mf.png'));
-                case 'cap1uf_100to100k_4puntas'
-                    imshow(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency100Hz100kHz\capacitor1uf.png'));
-                case 'cap10uf_100to100k_4puntas'
-                    imshow(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency100Hz100kHz\capacitor10uf.png'));
-                case 'cap47uf_100to100k_4puntas'
-                    imshow(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency100Hz100kHz\capacitor47uf.png'));
-                case 'cap100nf_100to100k_4puntas'
-                    imshow(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency100Hz100kHz\capacitor100nf.png'));
-                case 'cap100uf_100to100k_4puntas'
-                    imshow(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency100Hz100kHz\capacitor100uf.png'));
-                case 'ind1_5mh_100to100k_4puntas'
-                    imshow(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency100Hz100kHz\inductor1_5mh.png'));
-                case 'ind1mh_100to100k_4puntas'
-                    imshow(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency100Hz100kHz\inductor1mh.png'));
-                case 'ind4_7mh_100to100k_4puntas'
-                    imshow(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency100Hz100kHz\inductor4_7mh.png'));
-                case 'ind12mh_100to100k_4puntas'
-                    imshow(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency100Hz100kHz\inductor12mh.png'));
+                    print(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency1kHz100kHz\capacitor1mf.log'),4);
+                case 'cap1uf_1kto100k_4puntas'
+                    print(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency1kHz100kHz\capacitor1uf.log'),4);
+                case 'cap10uf_1kto100k_4puntas'
+                    print(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency1kHz100kHz\capacitor10uf.log'),4);
+                case 'cap47uf_1kto100k_4puntas'
+                    imshow(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency1kHz100kHz\capacitor47uf.png'),4);
+                case 'cap100nf_1kto100k_4puntas'
+                    print(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency1kHz100kHz\capacitor100nf.log'),4);
+                case 'cap100uf_1kto100k_4puntas'
+                    print(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency1kHz100kHz\capacitor100uf.log'),4);
+                case 'ind1_5mh_1kto100k_4puntas'
+                    imshow(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency1kHz100kHz\inductor1_5mh.png'));
+                case 'ind1mh_1kto100k_4puntas'
+                    imshow(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency1kHz100kHz\inductor1mh.png'));
+                case 'ind4_7mh_1kto100k_4puntas'
+                    imshow(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency1kHz100kHz\inductor4_7mh.png'));
+                case 'ind12mh_1kto100k_4puntas'
+                    imshow(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency1kHz100kHz\inductor12mh.png'));
                 case 'ind15mh_1kto100k_4puntas'
                     imshow(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency1kHz100kHz\inductor15mh.png'));
-                case 'res1k_100to100k_4puntas'
-                    imshow(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency100Hz100kHz\resistor1k.png'));
-                case 'res10k_100to100k_4puntas'
-                    imshow(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency100Hz100kHz\resistor10k.png'));
-                case 'res100_100to100k_4puntas'
-                    imshow(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency100Hz100kHz\resistor100.png'));
-                case 'res100k_100to100k_4puntas'
-                    imshow(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency100Hz100kHz\resistor100k.png'));
+                case 'res1k_1kto100k_4puntas'
+                    print(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency1kHz100kHz\resistor1k.log'),4);
+                case 'res10k_1kto100k_4puntas'
+                    print(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency1kHz100kHz\resistor10k.log'),4);
+                case 'res100_1kto100k_4puntas'
+                    print(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency1kHz100kHz\resistor100.log'),4);
+                case 'res100k_1kto100k_4puntas'
+                    print(strcat(pwd,'\Componentes Pasivos\4 Puntas\Frequency1kHz100kHz\resistor100k.log'),4);
                 otherwise 
                     warning('ERROR')
             end
